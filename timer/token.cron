@@ -1,2 +1,2 @@
-*/5 * * * * /root/Dev/ALGO/timer/token.sh
+0 5 8,28 * * sh /root/Dev/ALGO/timer/token.sh
 
