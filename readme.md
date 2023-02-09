@@ -50,9 +50,7 @@ api会返回一个json格式文本，从中提取回答即可
 
 ②测试与调优：
 
-模型训练并部署成功后，可以在网页端进行进一步的测试与调优，步骤如下图所示：
-
-<img src="C:\Users\86152\Desktop\md\picture\image-20230207101658577.png" alt="image-20230207101658577" style="zoom: 67%;" />
+模型训练并部署成功后，可以在网页端进行进一步的测试与调优，优化我们的模型。
 
 其中，调优模式是，在模型对问题有若干个可能的回答时，调试者在客户端提问，选择更合适的答案：
 
@@ -66,11 +64,9 @@ api会返回一个json格式文本，从中提取回答即可
 
 ①根据山大新闻网，我们一共选取了三个板块作为爬取的目标：
 
-头条部分：
+头条部分：首页头条和其下的滚动页面头条。
 
 <img src="picture\image-20230207111348740.png" alt="image-20230207111348740" style="zoom:80%;" />
-
-<img src="C:\Users\86152\Desktop\md\picture\image-20230207111525461.png" alt="image-20230207111525461" style="zoom:80%;" />
 
 山大要闻：
 
@@ -110,10 +106,5 @@ api会返回一个json格式文本，从中提取回答即可
 
 ###### 2.信息的自动更新：
 
-在问答系统中，新闻和unit调用所需的token都需要定期更新，我们采用了Linux的crontab命令来实现更新脚本的定期执行
+在问答系统中，新闻和unit调用所需的token都需要定期更新，我们采用了Linux的crontab命令来实现更新脚本的定期执行。
 
-Linux的crontab命令简表：
-
-<img src="C:\Users\86152\Desktop\md\picture\QQ图片20230118202639.jpg" alt="QQ图片20230118202639" style="zoom: 50%;" />
-
-<img src="C:\Users\86152\Desktop\md\picture\QQ图片20230118202648.jpg" alt="QQ图片20230118202648" style="zoom: 50%;" />
