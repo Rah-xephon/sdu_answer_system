@@ -2,11 +2,11 @@
 
 ### 讲解框架：
 
-<img src="picture\问答系统.png" alt="问答系统" style="zoom: 50%;" />
+<img src="picture\问答系统V2.png" alt="问答系统V2" style="zoom:50%;" />
 
 ### 百度unit:
 
-##### 1.创建机器人与技能，调用机器人问答api
+###### 1.创建机器人与技能，调用机器人问答api
 
 ①注册百度账号，登录百度unit，新建机器人与技能
 
@@ -55,6 +55,48 @@ api会返回一个json格式文本，从中提取回答即可
 其中，调优模式是，在模型对问题有若干个可能的回答时，调试者在客户端提问，选择更合适的答案：
 
 ![image-20230207103234352](picture\image-20230207103234352.png)
+
+
+
+### GPT3
+
+###### 1.账号创建
+
+①需提前准备的东西：稳定的国外ip全局代理，一个邮箱
+
+②打开全局代理，访问openai官网：[OpenAI(openai.com)](https://openai.com/)
+
+③点击注册：
+
+<img src="D:\github\sdu_as\sdu_answer_system\picture\qq_pic_merged_1677044370022.jpg" alt="qq_pic_merged_1677044370022" style="zoom:50%;" />
+
+④输入邮箱、设置密码、并完成邮箱验证：
+
+<img src="D:\github\sdu_as\sdu_answer_system\picture\qq_pic_merged_1677044584765.jpg" alt="qq_pic_merged_1677044584765" style="zoom:50%;" />
+
+⑤接着就是需要完成手机号验证了，我们需要一个国外虚拟手机号来接收一次验证码。推荐：https://sms-activate.org
+
+在左侧服务搜索OpenAI，在下面给出的国家/地区中选择一个，充值并购买一个账号即可
+
+<img src="picture\image-20230222134839930.png" alt="image-20230222134839930" style="zoom:50%;" />
+
+<img src="picture\image-20230222134937090.png" alt="image-20230222134937090" style="zoom:50%;" />
+
+⑥用虚拟手机号完成手机验证码验证，即完成openai账号的注册。
+
+###### 2.API调用
+
+①在官方给出的api调用文档里有详尽的解释。
+
+②本项目调用openai，是在unit无法处理的问题的时候，调用GPT3来回答一些更广泛的问题。（具体见代码注释）
+
+需要注意的是，当调用GPT3时，问答系统反应时间普遍要长一些，具体多长时间与问题复杂度有关，实测一般要15s左右。
+
+
+
+
+
+
 
 ### 爬虫
 
